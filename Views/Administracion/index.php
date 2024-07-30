@@ -3,14 +3,14 @@
 <div class="card shadow-lg">
     <div class="card-body">
         <div class="card-title">
-            <h5>Datos de GYM</h5>
+            <h5>Datos de PANTERA GYM</h5>
         </div>
         <form id="frmEmpresa" onsubmit="modificarEmpresa(event)" autocomplete="off">
             <div class="row">
                 <div class="col-md-3">
                     <div class="form-group mb-3">
                         <input id="id" class="form-control" type="hidden" name="id" value="<?php echo $data['empresa']['id']; ?>" required>
-                        <label for="ruc"><i class="fas fa-id-card"></i> Ruc</label>
+                        <label for="ruc"><i class="fas fa-id-card"></i> RFC</label>
                         <input id="ruc" class="form-control" type="number" name="ruc" placeholder="Ruc" value="<?php echo $data['empresa']['ruc'] ?>" required>
                     </div>
                 </div>

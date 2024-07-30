@@ -22,14 +22,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <meta name="author" content="Themefisher">
   <meta name="generator" content="Themefisher Novena HTML Template v1.0">
-  
+
   <!-- theme meta -->
   <meta name="theme-name" content="novena" />
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" />
 
-  <!-- 
+  <!--
   Essential stylesheets
   =====================================-->
   <link rel="stylesheet" href="<?php echo base_url; ?>Assets/home/plugins/bootstrap/bootstrap.min.css">
@@ -50,14 +50,14 @@
 			<div class="row align-items-center">
 				<div class="col-lg-6">
 					<ul class="top-bar-info list-inline-item pl-0 mb-0">
-						<li class="list-inline-item"><a href="mailto:support@gmail.com"><i class="icofont-support-faq mr-2"></i>info@sistemasfree.com</a></li>
-						<li class="list-inline-item"><i class="icofont-location-pin mr-2"></i>Address Ta-134/A, New York, USA </li>
+						<li class="list-inline-item"><a href="mailto:support@gmail.com"><i class="icofont-support-faq mr-2"></i>info@panteragym.com</a></li>
+						<li class="list-inline-item"><i class="icofont-location-pin mr-2"></i>L. de Arena y L. Peipus, Seminario. Toluca, Mex.</li>
 					</ul>
 				</div>
 				<div class="col-lg-6">
 					<div class="text-lg-right top-right-bar mt-2 mt-lg-0">
 						<a href="tel:+23-345-67890">
-							<span>Call Now : </span>
+							<span>Llama ya : </span>
 							<span class="h4">823-4565-13456</span>
 						</a>
 					</div>
@@ -98,9 +98,9 @@
 				<div class="block">
 					<div class="divider mb-3"></div>
 					<span class="text-uppercase text-sm letter-spacing text-white">Ponte en forma</span>
-					<h1 class="mb-3 mt-3 shadow-white">Lorem ipsum dolor sit amet.</h1>
-					
-					<p class="mb-4 pr-5 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis provident placeat, at ratione ullam cumque.</p>
+					<h1 class="mb-3 mt-3 shadow-white">Instalaciones y equipo completamente nuevo.</h1>
+
+					<p class="mb-4 pr-5 text-white">El ejercicio combate las afecciones y las enfermedades Esta combinación mantiene el flujo sanguíneo, lo que reduce el riesgo para enfermedades cardiovasculares. El ejercicio regular ayuda a prevenir o controlar muchos problemas de salud y preocupaciones, incluidos: Accidente cerebrovascular.</p>
 				</div>
 			</div>
 		</div>
@@ -116,30 +116,30 @@
 						<div class="feature-icon mb-4">
 							<i class="icofont-surgeon-alt"></i>
 						</div>
-						<span>24 Horas de servicio</span>
+						<span>Ven y conoce nuestras nuevas instalaciones, el mejor equipo, contámos con regaderas.</span>
 						<h4 class="mb-3">Dirección</h4>
-						<p class="mb-4">Av. numero 123</p>
+						<p class="mb-4">Lago Peipus esq. Lomas de Arena, Col. Seminario, Toluca, México</p>
 					</div>
-				
+
 					<div class="feature-item mb-5 mb-lg-0">
 						<div class="feature-icon mb-4">
 							<i class="icofont-ui-clock"></i>
 						</div>
 						<h4 class="mb-3">Horario</h4>
 						<ul class="w-hours list-unstyled">
-							<li class="d-flex justify-content-between">Sun - Wed : <span>8:00 - 17:00</span></li>
-							<li class="d-flex justify-content-between">Thu - Fri : <span>9:00 - 17:00</span></li>
-							<li class="d-flex justify-content-between">Sat - sun : <span>10:00 - 17:00</span></li>
+							<li class="d-flex justify-content-between">Lunes - Viernes : <span>8:00 - 17:00</span></li>
+							<li class="d-flex justify-content-between">Sábados : <span>8:00 - 20:00</span></li>
+							<li class="d-flex justify-content-between">Domingos : <span> Proximamente</span></li>
 						</ul>
 					</div>
-				
+
 					<div class="feature-item mb-5 mb-lg-0">
 						<div class="feature-icon mb-4">
 							<i class="icofont-support"></i>
 						</div>
 						<span>Telefono</span>
 						<h4 class="mb-3">1-800-700-6200</h4>
-						<p>Para reservas .</p>
+						<p>Ponte en contácto con nostros y haz tu vísita lo más pronto posible</p>
 					</div>
 				</div>
 			</div>
@@ -178,7 +178,7 @@
 				<div class="section-title text-center">
 					<h2>Nuestros planes</h2>
 					<div class="divider mx-auto my-4"></div>
-					<p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
+					<p>Nuestros planes de entrenamiento tienen una planificación, con diferentes fases y objetivos de entrenamiento. Será todo un año de entrenamiento donde pondremos a prueba nuestra disciplina y nuestra fuerza tanto física como mental.</p>
 				</div>
 			</div>
 		</div>
@@ -218,7 +218,7 @@
 					<div class="logo mb-4">
 						<img src="<?php echo base_url; ?>Assets/images/logo.png" alt="" class="img-fluid" width="100">
 					</div>
-					<p>Tempora dolorem voluptatum nam vero assumenda voluptate, facilis ad eos obcaecati tenetur veritatis eveniet distinctio possimus.</p>
+					<p>La filosofía detrás del fitness se basa en el equilibrio entre el cuerpo y la mente. No se trata solo de levantar pesas y hacer ejercicio intenso, sino también de alimentarse correctamente, descansar adecuadamente y cuidar la salud mental.</p>
 
 					<ul class="list-inline footer-socials mt-4">
 						<li class="list-inline-item">
@@ -266,23 +266,23 @@
 
 			<div class="col-lg-3 col-md-6 col-sm-6">
 				<div class="widget widget-contact mb-5 mb-lg-0">
-					<h4 class="text-capitalize mb-3">Get in Touch</h4>
+					<h4 class="text-capitalize mb-3">Impulsado por DanaeMX</h4>
 					<div class="divider mb-4"></div>
 
 					<div class="footer-contact-block mb-4">
 						<div class="icon d-flex align-items-center">
 							<i class="icofont-email mr-3"></i>
-							<span class="h6 mb-0">Support Available for 24/7</span>
+							<span class="h6 mb-0">Soporte Disponible 24/7</span>
 						</div>
-						<h4 class="mt-2"><a href="mailto:support@email.com">Support@email.com</a></h4>
+						<h4 class="mt-2"><a href="mailto:alex@danaemx.com">alex@danaemx.com</a></h4>
 					</div>
 
 					<div class="footer-contact-block">
 						<div class="icon d-flex align-items-center">
 							<i class="icofont-support mr-3"></i>
-							<span class="h6 mb-0">Mon to Fri : 08:30 - 18:00</span>
+							<span class="h6 mb-0">Lun. a Vie. : 08:30 - 18:00</span>
 						</div>
-						<h4 class="mt-2"><a href="tel:+23-345-67890">+23-456-6588</a></h4>
+						<h4 class="mt-2"><a href="tel:+23-345-67890">+52 7226342712</a></h4>
 					</div>
 				</div>
 			</div>
@@ -290,16 +290,16 @@
 	</div>
 </footer>
 
-   
 
-    <!-- 
+
+    <!--
     Essential Scripts
     =====================================-->
     <script src="<?php echo base_url; ?>Assets/home/plugins/jquery/jquery.js"></script>
     <script src="<?php echo base_url; ?>Assets/home/plugins/bootstrap/bootstrap.min.js"></script>
     <script src="<?php echo base_url; ?>Assets/home/plugins/slick-carousel/slick/slick.min.js"></script>
     <script src="<?php echo base_url; ?>Assets/home/plugins/shuffle/shuffle.min.js"></script>
-    
+
     <script src="<?php echo base_url; ?>Assets/home/js/script.js"></script>
 
   </body>

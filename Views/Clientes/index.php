@@ -9,7 +9,7 @@
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Dni</th>
+                        <th>DNI</th>
                         <th>Nombre</th>
                         <th>Teléfono</th>
                         <th>Dirección</th>

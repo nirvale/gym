@@ -31,8 +31,8 @@
               <div class="brand-logo">
                 <img src="<?php echo base_url; ?>Assets/images/logo.png" alt="logo">
               </div>
-              <h4>Welcome back!</h4>
-              <h6 class="font-weight-light">Happy to see you again!</h6>
+              <h4>¡Bienvenido!</h4>
+              <h6 class="font-weight-light">Que alegria verte de nuevo...</h6>
               <div class="alert alert-danger d-none" role="alert" id="alerta">
               </div>
               <form class="pt-3" id="frmLogin" onsubmit="frmLogin(event)">
@@ -65,7 +65,7 @@
             </div>
           </div>
           <div class="col-lg-8 login-half-bg d-flex flex-row">
-            <p class="text-white font-weight-medium text-center flex-grow align-self-end">Copyright &copy; <?php echo date('Y'); ?>  All rights reserved.</p>
+            <p class="text-white font-weight-medium text-center flex-grow align-self-end">Copyright &copy; <?php echo date('Y'); ?>  DanaeMX Derechos Reservados</p>
           </div>
         </div>
       </div>

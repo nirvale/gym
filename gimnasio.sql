@@ -311,7 +311,7 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (1,'admin','SISTEMAS FREE','info@sistemasfree.com','41e5653fc7aeb894026d6bb7b2db7f65902b454945fa8fd65a6327047b5277fb','98789654','avatar.svg','1','2023-03-06 15:34:19',1),(2,'ana','ANA LOPEZ','ana.info1999@gmail.com','5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5','98765678','avatar.svg','1','2023-03-06 15:35:37',1);
+INSERT INTO `usuarios` VALUES (1,'admin','SISTEMAS FREE','info@panteragym.com','41e5653fc7aeb894026d6bb7b2db7f65902b454945fa8fd65a6327047b5277fb','98789654','avatar.svg','1','2023-03-06 15:34:19',1),(2,'ana','ANA LOPEZ','ana.info1999@gmail.com','5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5','98765678','avatar.svg','1','2023-03-06 15:35:37',1);
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

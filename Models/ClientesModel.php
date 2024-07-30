@@ -26,7 +26,7 @@ class ClientesModel extends Query{
     //Buscar para agregar Pago
     public function buscarPlanCliente($valor)
     {
-        $sql = "SELECT c.id, c.nombre, c.estado, d.id AS id_detalle, d.id_cliente, d.id_plan, d.fecha_venc, d.fecha_limite, p.id, p.plan, p.precio_plan FROM clientes c INNER JOIN detalle_planes d ON d.id_cliente = c.id INNER JOIN planes p ON p.id = d.id_plan WHERE c.nombre LIKE '%" . $valor . "%' AND c.estado = 1";
+        $sql = "SELECT c.id, c.nombre, c.estado, d.id AS id_detalle, d.id_cliente, d.id_plan, d.fecha_venc, d.fecha_limite, p.id, p.plan, p.precio_plan FROM clientes c INNER JOIN detalle_planes d ON d.id_cliente = c.id INNER JOIN planes p ON p.id = d.id_plan WHERE c.nombre LIKE '%" . $valor . "%' AND c.estado = 1 AND d.estado = 1";
         $data = $this->selectAll($sql);
         return $data;
     }
@@ -92,7 +92,7 @@ class ClientesModel extends Query{
         $data = $this->selectAll($sql);
         return $data;
     }
-    
+
     public function getPlanCliente()
     {
         $sql = "SELECT d.*, p.plan, p.precio_plan, c.dni, c.nombre FROM detalle_planes d INNER JOIN planes p ON d.id_plan = p.id INNER JOIN clientes c ON d.id_cliente = c.id";

@@ -49,7 +49,7 @@ WHERE fecha BETWEEN '$desde' AND '$hasta' AND id_user = $id_user";
         $data = $this->select($sql);
         return $data;
 
-        
+
     }
     public function getVentas($id_user)
     {

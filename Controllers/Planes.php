@@ -135,10 +135,10 @@ class Planes extends Controller
         $fecha = date('Y-m-d');
         $hora = date('H:i:s');
         $consultaPlan = $this->model->editarPlan($id_plan);
-        if ($consultaPlan == 'MENSUAL') {
+        if ($consultaPlan['condicion'] == 'MENSUAL') {
             $fecha_venc = date("Y-m-d", strtotime($fecha . '+1 month'));
         }else {
-            $fecha_venc = date("Y-m-d", strtotime($fecha . '+1 year'));  
+            $fecha_venc = date("Y-m-d", strtotime($fecha . '+1 year'));
         }
         $fecha_limite = date("Y-m-d",strtotime($fecha_venc. '+ ' . $empresa['limite'] . ' days'));
         if (empty($id_cli) || empty($id_plan)) {
@@ -176,11 +176,20 @@ class Planes extends Controller
             $fecha = date('Y-m-d');
             $hora = date('H:i:s');
             $consultaPlan = $this->model->editarPlan($consultar['id_plan']);
-            if ($consultaPlan == 'MENSUAL') {
-                $fecha_venc = date("Y-m-d", strtotime($consultar['fecha_venc'] . '+1 month'));
-            } else {
-                $fecha_venc = date("Y-m-d", strtotime($consultar['fecha_venc'] . '+1 year'));
+            if ( $consultar['fecha_venc'] >= $fecha) {
+              if ($consultaPlan['condicion'] == 'MENSUAL') {
+                  $fecha_venc = date("Y-m-d", strtotime($consultar['fecha_venc'] . '+1 month'));
+              } else {
+                  $fecha_venc = date("Y-m-d", strtotime($consultar['fecha_venc'] . '+1 year'));
+              }
+            }elseif($consultar['fecha_venc'] < $fecha) {
+              if ($consultaPlan['condicion'] == 'MENSUAL') {
+                  $fecha_venc = date("Y-m-d", strtotime($consultar['fecha_venc'] . '+1 month'));
+              } else {
+                  $fecha_venc = date("Y-m-d", strtotime($consultar['fecha_venc'] . '+1 year'));
+              }
             }
+
             $fecha_limite = date("Y-m-d", strtotime($fecha_venc . '+ ' . $empresa['limite'] . ' days'));
             $data = $this->model->registrarPago($fecha_venc, $fecha_limite, $id);
             if ($data == 'ok') {
@@ -198,5 +207,5 @@ class Planes extends Controller
         }
         echo json_encode($mensaje);
         die();
-    } 
+    }
 }

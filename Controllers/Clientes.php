@@ -1,4 +1,5 @@
 <?php
+//--linea 166                     <button class="btn btn-outline-primary" type="button" onclick="pagoPlan(' . $data[$i]['id'] . ');"><i class="fas fa-dollar-sign"></i></button>
 
 use Luecano\NumeroALetras\NumeroALetras;
 
@@ -163,7 +164,6 @@ class Clientes extends Controller
             if ($data[$i]['estado'] == 1) {
                 $data[$i]['estado'] = '<span class="badge bg-success">Activo</span>';
                 $data[$i]['accion'] = '<div>
-                    <button class="btn btn-outline-primary" type="button" onclick="pagoPlan(' . $data[$i]['id'] . ');"><i class="fas fa-dollar-sign"></i></button>
                     <a class="btn btn-outline-danger" href="' . base_url . 'clientes/verpagos/' . $data[$i]['id_cliente'] . '"><i class="fas fa-eye"></i></a>
                     <button class="btn btn-outline-warning" type="button" onclick="desactivar(' . $data[$i]['id'] . ');"><i class="fas fa-ban"></i></button>
                 </div>';
@@ -287,7 +287,7 @@ class Clientes extends Controller
         $pdf->Cell(50, 8, utf8_decode('Direccion'), 0, 0, 'L', true);
         $pdf->Cell(120, 8, 'Plan', 0, 0, 'L', true);
         $pdf->Cell(20, 8, 'Monto', 0, 0, 'L', true);
-        $pdf->Cell(30, 8, 'Fecha', 0, 0, 'L', true);        
+        $pdf->Cell(30, 8, 'Fecha', 0, 0, 'L', true);
         $pdf->Cell(35, 8, utf8_decode('Vencimiento'), 0, 1, 'C', true);
         $pdf->SetTextColor(0, 0, 0);
         foreach ($result as $row) {
