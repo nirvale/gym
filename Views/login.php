@@ -32,7 +32,7 @@
                 <img src="<?php echo base_url; ?>Assets/images/logo.png" alt="logo">
               </div>
               <h4>¡Bienvenido!</h4>
-              <h6 class="font-weight-light">Que alegria verte de nuevo...</h6>
+              <h6 class="font-weight-light">Que alegría verte de nuevo...</h6>
               <div class="alert alert-danger d-none" role="alert" id="alerta">
               </div>
               <form class="pt-3" id="frmLogin" onsubmit="frmLogin(event)">
@@ -55,7 +55,7 @@
                         <i class="fa fa-lock text-primary"></i>
                       </span>
                     </div>
-                    <input type="password" class="form-control form-control-lg border-left-0" id="clave" name="clave" placeholder="Password">                        
+                    <input type="password" class="form-control form-control-lg border-left-0" id="clave" name="clave" placeholder="Password">
                   </div>
                 </div>
                 <div class="my-3">

@@ -32,7 +32,7 @@
                 </div>
             </div>
         </form>
-        <div class="row mb-2">
+        <!-- <div class="row mb-2">
             <div class="col-md-4">
                 <label for="">DESDE</label>
                 <input class="form-control" id="min" type="date" name="plan_min">
@@ -41,7 +41,7 @@
                 <label for="">HASTA</label>
                 <input class="form-control" id="max" type="date" name="plan_max">
             </div>
-        </div>
+        </div> -->
         <div class="table-responsive my-2">
             <table class="table table-striped table-hover display responsive nowrap" id="tblPlanCli" style="width: 100%;">
                 <thead>
