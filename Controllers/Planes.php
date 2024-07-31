@@ -144,7 +144,7 @@ class Planes extends Controller
         if (empty($id_cli) || empty($id_plan)) {
             $msg = array('msg' => 'Todo los campos son obligatorios', 'icono' => 'warning');
         } else {
-            $data = $this->model->registrarPlanCliente($id_cli, $id_plan, $fecha, $hora, $fecha_venc, $fecha_limite, $this->user);
+            $data = $this->model->registrarPlanCliente($id_cli, $id_plan, $fecha, $hora, $fecha, $fecha_limite, $this->user);
             if ($data == "ok") {
                 $msg = array('msg' => 'Plan registrado con éxito', 'icono' => 'success');
             } else if ($data == "existe") {

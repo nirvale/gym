@@ -213,8 +213,6 @@ class Clientes extends Controller
         $pdf->SetMargins(2, 2, 2);
         $pdf->SetTitle('RECIBO DE PAGO');
         $pdf->SetFont('Arial', 'B', 10);
-
-
         $pdf->Cell(90, 8, utf8_decode($empresa['nombre']), 0, 1, 'C');
         $pdf->Image('Assets/images/logo.png', 5, 18, 25, 25);
         $pdf->SetFont('Arial', 'B', 8);
