@@ -63,7 +63,7 @@ DROP TABLE IF EXISTS `clientes`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `clientes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `dni` varchar(10) NOT NULL,
+  `dni` varchar(10) DEFAULT NULL,
   `nombre` varchar(100) NOT NULL,
   `telefono` varchar(15) NOT NULL,
   `direccion` text NOT NULL,
@@ -131,7 +131,7 @@ CREATE TABLE `detalle_planes` (
   `fecha` date NOT NULL,
   `hora` time NOT NULL,
   `fecha_venc` date NOT NULL,
-  `fecha_limite` date NOT NULL,
+  `fecha_limite` date DEFAULT NULL,
   `id_user` int(11) NOT NULL,
   `estado` int(11) NOT NULL DEFAULT 1,
   PRIMARY KEY (`id`),

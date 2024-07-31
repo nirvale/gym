@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
             dataSrc: ''
         },
         columns: [{ 'data': 'id' },
-        { 'data': 'dni' },
+        // { 'data': 'dni' },
         { 'data': 'nombre' },
         { 'data': 'telefono' },
         { 'data': 'direccion' },
@@ -268,12 +268,12 @@ document.addEventListener("DOMContentLoaded", function () {
         columns: [
             { 'data': 'id' },
             { 'data': 'fecha' },
-            { 'data': 'dni' },
+            // { 'data': 'dni' },
             { 'data': 'nombre' },
             { 'data': 'plan' },
             { 'data': 'precio_plan' },
             { 'data': 'fecha_venc' },
-            { 'data': 'fecha_limite' },
+            // { 'data': 'fecha_limite' },
             { 'data': 'estado' },
             { 'data': 'accion' }
         ],
@@ -285,7 +285,7 @@ document.addEventListener("DOMContentLoaded", function () {
         createdRow: function (row, data, index) {
             //pintar una celda
             if (data.fecha_venc < data.fecha_actual) {
-                $('td', row).eq(6).html('<span class="badge bg-danger">' + data.fecha_venc + '</span>');
+                $('td', row).eq(5).html('<span class="badge bg-danger">' + data.fecha_venc + '</span>');
             }
             if (data.fecha_venc < data.fecha_actual) {
                 $('td', row).css({
@@ -605,19 +605,20 @@ function btnEliminarUser(id) {
 
 //Fin Usuarios
 function frmCliente() {
-    document.getElementById("title").textContent = "Nuevo Cliente";
-    document.getElementById("btnAccion").textContent = "Registrar";
+    document.getElementById("title").textContent = "REGISTRAR NUEVO CLIENTE";
+    document.getElementById("btnAccion").textContent = "REGISTRAR";
     document.getElementById("frmCliente").reset();
     document.getElementById("id").value = "";
     $('#myModal').modal('show');
 }
 function registrarCli(e) {
     e.preventDefault();
-    const dni = document.getElementById("dni").value;
+    // const dni = document.getElementById("dni").value;
     const nombre = document.getElementById("nombre").value;
     const telefono = document.getElementById("telefono").value;
     const direccion = document.getElementById("direccion").value;
-    if (dni == '' || nombre == '' || telefono == '' || direccion == '') {
+    // if (dni == '' || nombre == '' || telefono == '' || direccion == '') {
+    if ( nombre == '' || telefono == '' || direccion == '') {
         alertas('Todo los campos son obligatorios', 'warning');
     } else {
         const url = base_url + "clientes/registrar";

@@ -9,7 +9,7 @@
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>DNI</th>
+                        <!-- <th>DNI</th> -->
                         <th>Nombre</th>
                         <th>Teléfono</th>
                         <th>Dirección</th>
@@ -36,12 +36,13 @@
             </div>
             <form id="frmCliente" onsubmit="registrarCli(event);" autocomplete="off">
                 <div class="modal-body">
-                    <div class="form-group mb-3">
+                    <!-- <div class="form-group mb-3">
                         <input type="hidden" id="id" name="id">
                         <label for="dni"><i class="fas fa-id-card"></i> Dni</label>
                         <input id="dni" class="form-control" type="number" name="dni" placeholder="Documento de Identidad">
-                    </div>
+                    </div> -->
                     <div class="form-group mb-3">
+                      <input type="hidden" id="id" name="id">
                         <label for="nombre"><i class="fas fa-list"></i> Nombre</label>
                         <input id="nombre" class="form-control" type="text" name="nombre" placeholder="Nombre del cliente" required>
                     </div>

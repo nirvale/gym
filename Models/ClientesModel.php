@@ -44,7 +44,8 @@ class ClientesModel extends Query{
     }
     public function registrarCliente($dni, $nombre, $telefono, $direccion, $id_user)
     {
-        $verficar = "SELECT * FROM clientes WHERE dni = '$dni'";
+        // $verficar = "SELECT * FROM clientes WHERE dni = '$dni'";
+        $verficar = "SELECT * FROM clientes WHERE nombre = '$nombre'";
         $existe = $this->select($verficar);
         if (empty($existe)) {
             # code...
